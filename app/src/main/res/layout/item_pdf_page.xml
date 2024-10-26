@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="8dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10px"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/recyclerview"
+        android:backgroundTint="#4D0078D4"
+        android:layout_gravity="center"
+        android:gravity="center"
+       >
+
+        <!-- ImageView for PDF preview -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="47dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="8px">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/pageImageView"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_gravity="center"-->
+
+            <!--                />-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:src="@drawable/mergepdficon"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- TextView for PDF title -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/pdfTitleTextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                tools:text="Sample PDF Title" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="merge pdf" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!-- TextView for Date and Time -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12mm"
+            android:layout_marginRight="8dp"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:weightSum="0.5">
+
+            <RelativeLayout
+                android:layout_width="46dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mergebluecolor"
+                android:backgroundTint="#0167DF"
+                android:gravity="center"
+
+
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="merge"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pdfTimestampTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="11sp"
+                tools:text="2024-08-28 \n 12:34:56"
+
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorLight">#000000</color>
+    <color name="textColorDark">#FFFFFF</color>
+    <color name="card_background_color">#0078D4</color>
+
+    <color name="recycler_view" >#D8EEFE</color>
+    <color name="activeCardColor">#0078D4</color> <!-- Full opacity example -->
+
+    <!-- Inactive Card Color with reduced opacity (e.g., 50% opacity) -->
+    <color name="inactiveCardColor">#806200EE</color>
+
+
+    <color name="my_dark_primary">#FFFFFF</color>
+
+    <string name="darkmode" > Choose Theme </string>
+
+
+</resources>

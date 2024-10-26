@@ -1,0 +1,5 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="default_margin">16dp</dimen>
+    <!-- Add other dimension resources here -->
+</resources>

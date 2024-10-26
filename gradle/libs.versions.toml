@@ -1,0 +1,50 @@
+[versions]
+agp = "8.5.1"
+androidPdfViewer = "2.8.2"
+colorpicker = "1.1.6’"
+colorpickerVersion = "1.1.6"
+coordinatortablayout = "1.2.2"
+coreKtxVersion = "1.13.1"
+appcompatVersion = "1.7.0"
+cpdfkit = "1.0.1"
+githubColorpicker = "2.3"
+itext7Core = "7.2.3"
+kotlin = "1.9.0"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+layout = "7.2.0"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+protoliteWellKnownTypes = "18.0.0"
+filamentAndroid = "1.17.1"
+
+[libraries]
+android-pdf-viewer = { module = "com.github.barteksc:android-pdf-viewer", version.ref = "androidPdfViewer" }
+androidx-appcompat-v170 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-ktx-v1131 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
+colorpicker = { module = "‘com.github.duanhong169:colorpicker", version.ref = "colorpicker" }
+coordinatortablayout = { module = "cn.hugeterry.coordinatortablayout:coordinatortablayout", version.ref = "coordinatortablayout" }
+cpdfkit = { module = "com.github.Compdfkit:CPDFKit", version.ref = "cpdfkit" }
+dhaval2404-colorpicker = { module = "com.github.Dhaval2404:ColorPicker", version.ref = "githubColorpicker" }
+duanhong169-colorpicker = { module = "com.github.duanhong169:colorpicker", version.ref = "colorpickerVersion" }
+itext7-core = { module = "com.itextpdf:itext7-core", version.ref = "itext7Core" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+layout = { module = "com.itextpdf:layout", version.ref = "layout" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+protolite-well-known-types = { group = "com.google.firebase", name = "protolite-well-known-types", version.ref = "protoliteWellKnownTypes" }
+filament-android = { group = "com.google.ar.sceneform", name = "filament-android", version.ref = "filamentAndroid" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

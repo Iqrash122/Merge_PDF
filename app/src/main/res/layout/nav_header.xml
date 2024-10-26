@@ -1,0 +1,17 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="255dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/card_background_color"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:src="@drawable/logo"
+        />
+
+
+</LinearLayout>

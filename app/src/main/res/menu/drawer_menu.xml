@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy"
+            android:title="Privacy" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/sahre"
+
+            android:title="Share" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rateus"
+            android:title="Rate Us" />
+    </group>
+
+<!--    <item-->
+<!--        android:id="@+id/nav_dark_mode"-->
+<!--        android:title="@string/darkmode"-->
+<!--        android:icon="@drawable/darkmode"-->
+<!--        android:actionLayout="@layout/switch_layout"-->
+<!--        app:showAsAction="always" />-->
+</menu>

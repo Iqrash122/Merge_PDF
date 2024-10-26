@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFDDDDDD"/>
+    <stroke android:color="@color/black" />
+    <!-- Change this color as needed -->
+    <corners android:radius="500dp"    />
+
+    <!-- Match the radius of your original drawable -->
+</shape>

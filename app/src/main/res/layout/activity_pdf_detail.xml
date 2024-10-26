@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/backbtn">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:fontFamily="@font/inter"
+        android:text="Merge Pdf"
+        android:textFontWeight="600"
+        android:textSize="29sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appCompatTextView"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="72dp"
+            android:layout_height="87dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="8px"
+            android:backgroundTint="@color/white"
+            >
+
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mergepdficon"
+                android:background="@color/white"
+
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pdfTitleTextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Sample Pdf Title"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                >
+
+                <RelativeLayout
+
+                    android:id="@+id/share"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/share"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/shares" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/view"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/share"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/download"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/share"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/download" />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutCompat2"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/inter"
+        android:text="Downloaded Files"
+        android:textFontWeight="700"
+        android:textSize="26sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerecyclerViewrview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_pdf_page"
+        android:layout_below="@+id/appCompatTextView2"
+        android:layout_marginTop="20dp" />
+
+
+
+</RelativeLayout>

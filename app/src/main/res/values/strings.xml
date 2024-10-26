@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MergePdf</string>
+    <string name="more"><u>More</u></string>
+    <string name="action_settings">Rights and policy</string>
+    <string name="action_share">Description</string>
+    <string name="action_exit">Exit</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>
